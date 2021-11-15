@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         default: break
         }
     }
-    // Created the function for reset button
+    // Created the function for reset button. The equal button has sender.tag number 19
     @IBAction func resetButton(_ sender: UIButton) {
         if sender.tag == 19 && stillTyping == false {
             currentInput = 0
