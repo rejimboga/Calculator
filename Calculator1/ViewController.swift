@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
     var stillTyping = false
+    var dotIsSetted = false
     var firstNum: Double = 0
     var secondNum: Double = 0
     var operation = 0
@@ -19,7 +20,13 @@ class ViewController: UIViewController {
             return Double(resultLabel.text!)!
         }
         set {
-            resultLabel.text = "\(newValue)"
+            let value = "\(newValue)"
+            let valueArray = value.components(separatedBy: ".")
+            if valueArray [1] == "0" {
+                resultLabel.text = "\(valueArray [0])"
+            } else {
+                resultLabel.text = "\(value)"
+            }
             stillTyping = false
         }
     }
@@ -39,6 +46,7 @@ class ViewController: UIViewController {
         operation = sender.tag
         firstNum = currentInput
         stillTyping = false
+        dotIsSetted = false
     }
     func actions(action: (Double, Double) -> Double) {
         currentInput = action(firstNum, secondNum)
@@ -49,6 +57,9 @@ class ViewController: UIViewController {
         if stillTyping {
             secondNum = currentInput
         }
+        
+        dotIsSetted = false
+        
         switch operation {
         case 10:
             actions {$0 + $1}
@@ -64,9 +75,37 @@ class ViewController: UIViewController {
     // Created the function for reset button. The equal button has sender.tag number 19
     @IBAction func resetButton(_ sender: UIButton) {
         if sender.tag == 19 && stillTyping == false {
+            firstNum = 0
+            secondNum = 0
             currentInput = 0
-            resultLabel.text = "\(currentInput)"
+            resultLabel.text = "0"
             stillTyping = false
+            dotIsSetted = false
+        }
+    }
+    // Created the function for button which changes a sign
+    @IBAction func plusMinusButton(_ sender: UIButton) {
+        currentInput = -currentInput
+    }
+    // Created the function for percent button
+    @IBAction func percentButton(_ sender: UIButton) {
+        secondNum = firstNum * currentInput / 100
+        stillTyping = false
+    }
+    // Created the function for square button
+    @IBAction func squareButton(_ sender: UIButton) {
+        currentInput = sqrt(currentInput)
+        stillTyping = false
+    }
+    // Created the function to set a number with type Double
+    @IBAction func pointButton(_ sender: UIButton) {
+        if stillTyping == true && dotIsSetted == false {
+            resultLabel.text = resultLabel.text! + "."
+            dotIsSetted = true
+        } else if stillTyping == false && dotIsSetted == false {
+            resultLabel.text = "0."
+            stillTyping = true
+            dotIsSetted = true
         }
     }
 }

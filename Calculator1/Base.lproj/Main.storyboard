@@ -29,11 +29,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="100"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="+/-"/>
+                                        <connections>
+                                            <action selector="plusMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RqJ-Qq-c8n"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ua-3C-cpX">
                                         <rect key="frame" x="98.5" y="0.0" width="78.5" height="100"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="%"/>
+                                        <connections>
+                                            <action selector="percentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lLO-iO-JcO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbQ-19-eVW">
                                         <rect key="frame" x="197" y="0.0" width="78.5" height="100"/>
@@ -183,6 +189,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="100"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="√"/>
+                                        <connections>
+                                            <action selector="squareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EAH-CG-a71"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSd-xx-6CV">
                                         <rect key="frame" x="98.5" y="0.0" width="78.5" height="100"/>
@@ -200,6 +209,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title=".">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="pointButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pS-b3-M6K"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNZ-3h-535">
                                         <rect key="frame" x="295.5" y="0.0" width="78.5" height="100"/>
