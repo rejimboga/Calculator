@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var resultLabel: UILabel!
     var stillTyping = false
     var dotIsSetted = false
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             stillTyping = true
         }
     }
-    // Created the function for action button (plus, minus, definioton, multiply)
+    // Created the function for action button (plus, minus, division, multiply)
     @IBAction func actionButton(_ sender: UIButton) {
         operation = OperationType(rawValue: sender.tag)
         firstNum = currentInput

@@ -14,6 +14,7 @@
 		D0A65BD8273D5B9000B501BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A65BD6273D5B9000B501BC /* Main.storyboard */; };
 		D0A65BDA273D5B9200B501BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A65BD9273D5B9200B501BC /* Assets.xcassets */; };
 		D0A65BDD273D5B9200B501BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A65BDB273D5B9200B501BC /* LaunchScreen.storyboard */; };
+		D0E6996C2745321E00DA36A4 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6996B2745321E00DA36A4 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D0A65BD9273D5B9200B501BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A65BDC273D5B9200B501BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A65BDE273D5B9200B501BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E6996B2745321E00DA36A4 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D0A65BD2273D5B9000B501BC /* SceneDelegate.swift */,
 				D0A65BD4273D5B9000B501BC /* ViewController.swift */,
 				5F4DB336274521CA00CBE3E2 /* OperationType.swift */,
+				D0E6996B2745321E00DA36A4 /* RoundedButton.swift */,
 				D0A65BD6273D5B9000B501BC /* Main.storyboard */,
 				D0A65BD9273D5B9200B501BC /* Assets.xcassets */,
 				D0A65BDB273D5B9200B501BC /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A65BD5273D5B9000B501BC /* ViewController.swift in Sources */,
+				D0E6996C2745321E00DA36A4 /* RoundedButton.swift in Sources */,
 				5F4DB337274521CA00CBE3E2 /* OperationType.swift in Sources */,
 				D0A65BD1273D5B9000B501BC /* AppDelegate.swift in Sources */,
 				D0A65BD3273D5B9000B501BC /* SceneDelegate.swift in Sources */,
@@ -293,9 +297,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N7AGGR3TBG;
+				DEVELOPMENT_TEAM = 39FM4A9F4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator1/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -308,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Pavel-Bagan.Calculator1";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pavel-Bagan.Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,9 +328,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N7AGGR3TBG;
+				DEVELOPMENT_TEAM = 39FM4A9F4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator1/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Pavel-Bagan.Calculator1";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pavel-Bagan.Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
