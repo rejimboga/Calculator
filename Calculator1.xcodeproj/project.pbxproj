@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F4DB337274521CA00CBE3E2 /* OperationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4DB336274521CA00CBE3E2 /* OperationType.swift */; };
 		D0A65BD1273D5B9000B501BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A65BD0273D5B9000B501BC /* AppDelegate.swift */; };
 		D0A65BD3273D5B9000B501BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A65BD2273D5B9000B501BC /* SceneDelegate.swift */; };
 		D0A65BD5273D5B9000B501BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A65BD4273D5B9000B501BC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F4DB336274521CA00CBE3E2 /* OperationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationType.swift; sourceTree = "<group>"; };
 		D0A65BCD273D5B9000B501BC /* Calculator1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A65BD0273D5B9000B501BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0A65BD2273D5B9000B501BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D0A65BD0273D5B9000B501BC /* AppDelegate.swift */,
 				D0A65BD2273D5B9000B501BC /* SceneDelegate.swift */,
 				D0A65BD4273D5B9000B501BC /* ViewController.swift */,
+				5F4DB336274521CA00CBE3E2 /* OperationType.swift */,
 				D0A65BD6273D5B9000B501BC /* Main.storyboard */,
 				D0A65BD9273D5B9200B501BC /* Assets.xcassets */,
 				D0A65BDB273D5B9200B501BC /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A65BD5273D5B9000B501BC /* ViewController.swift in Sources */,
+				5F4DB337274521CA00CBE3E2 /* OperationType.swift in Sources */,
 				D0A65BD1273D5B9000B501BC /* AppDelegate.swift in Sources */,
 				D0A65BD3273D5B9000B501BC /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +293,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7AGGR3TBG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7AGGR3TBG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

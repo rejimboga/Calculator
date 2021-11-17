@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var dotIsSetted = false
     var firstNum: Double = 0
     var secondNum: Double = 0
-    var operation = 0
+    var operation: OperationType?
     var currentInput: Double {
         get {
             return Double(resultLabel.text!)!
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     // Created the function for action button (plus, minus, definioton, multiply)
     @IBAction func actionButton(_ sender: UIButton) {
-        operation = sender.tag
+        operation = OperationType(rawValue: sender.tag)
         firstNum = currentInput
         stillTyping = false
         dotIsSetted = false
@@ -61,13 +61,13 @@ class ViewController: UIViewController {
         dotIsSetted = false
         
         switch operation {
-        case 10:
+        case .plus:
             actions {$0 + $1}
-        case 11:
+        case .minus:
             actions {$0 - $1}
-        case 12:
+        case .multiply:
             actions {$0 * $1}
-        case 13:
+        case .definioton:
             actions {$0 / $1}
         default: break
         }
